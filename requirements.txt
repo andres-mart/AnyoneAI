@@ -1,6 +1,0 @@
-numpy
-pandas
-datetime
-matplotlib
-seaborn
-geopandas
