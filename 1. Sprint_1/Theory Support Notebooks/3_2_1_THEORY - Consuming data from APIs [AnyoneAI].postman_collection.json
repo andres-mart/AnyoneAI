@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "a07fad6c-7e27-4a88-ba64-86a4b019a5b0",
+		"name": "Consuming data from APIs [AnyoneAI]",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tickers active coins",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "quotes",
+							"value": "USD,BTC",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.coinpaprika.com/v1/tickers",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coinpaprika",
+						"com"
+					],
+					"path": [
+						"v1",
+						"tickers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "File upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "test.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.anonfiles.com/upload",
+					"protocol": "https",
+					"host": [
+						"api",
+						"anonfiles",
+						"com"
+					],
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "File info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.anonfiles.com/v2/file/5eH8a3P2y2/info",
+					"protocol": "https",
+					"host": [
+						"api",
+						"anonfiles",
+						"com"
+					],
+					"path": [
+						"v2",
+						"file",
+						"5eH8a3P2y2",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download file",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://anonfiles.com/5eH8a3P2y2/test_txt",
+					"protocol": "https",
+					"host": [
+						"anonfiles",
+						"com"
+					],
+					"path": [
+						"5eH8a3P2y2",
+						"test_txt"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

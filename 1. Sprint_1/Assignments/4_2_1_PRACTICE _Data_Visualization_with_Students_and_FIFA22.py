@@ -51,7 +51,7 @@ plt.scatter(train_X_norm["LOR "], train_Y)  # quite ambiguous
 
 # The rest of the data features have been found to be having little or no effect on the CHANCE OF ADMIT.
 
-#### Train the predictive mode : LINEAR REGRESSION/DECISION TREE REGRESSOR:
+#### Train the predictive mode: LINEAR REGRESSION and DECISION TREE REGRESSOR:
 
 # Instanciate the models:
 regression = LinearRegression()
